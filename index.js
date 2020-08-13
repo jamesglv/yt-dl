@@ -9,7 +9,7 @@ var PORT = process.env.PORT || 4000;
 app.use(cors());
 
 app.listen(PORT, () => {
-    console.log("Server works");
+    console.log("Server works!");
 });
 
 app.get('/download', (req,res) => {
