@@ -9,6 +9,6 @@ convertBtn.addEventListener('click', () => {
 });
 
 function sendURL(URL,outSel) {
-    window.location.href = "http://localhost:4000/download?URL="+URL+"&output="+outSel;
+    window.location.href = "https://ytdownloadtest.herokuapp.com/download?URL="+URL+"&output="+outSel;
     console.log("http://localhost:4000/download?URL="+URL+"&output="+outSel)
 }
