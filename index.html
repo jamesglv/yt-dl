@@ -9,7 +9,8 @@
 
 <body>
     <h1 class="heading">YOUTUBE DL</h1>
-    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?v=V7-yAX9ijuM">
+    <h3 class="description">A YouTube downloader using Javascript and Node.JS, integrating YouTube Data, YTDL and FFMPEG APIs.</h3>
+    <input class="URL-input" placeholder="Enter video URL or search...">
     
     <select name="output-select" class="output-select">
         <option value="video">Video</option>
@@ -19,7 +20,10 @@
     <div>
         <button class="convert-button">Convert</button>
     </div>
-    
+    <div class="searchContainer">
+        <ul id="resultsList"></ul>
+
+    </div>
     
 
     <script src="script.js"></script>

@@ -35,17 +35,22 @@ body {
     font-family: "exo", sans-serif;
     font-size: 2.6em;
     margin-top: 30vh;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
     letter-spacing: 10px;
 }
 
-.URL-input, .convert-button {
+.description {
+    font-family: "exo", sans-serif;
+    margin-bottom: 9vh;
+}
+
+.URL-input, .convert-button, #searchInput {
     font-size: 1.3em;
     font-family: exo, sans-serif;
     padding: 5px 10px;
 }
 
-.URL-input {
+.URL-input, #searchInput {
     border-radius: 4px 0px 0px 4px;
     width:30em;
     text-align: left;
@@ -60,14 +65,14 @@ body {
 }
 
 .convert-button {
-    margin-top: 10vh;
+    margin-top: 50px;
     border-radius: 4px;
     border: 3px solid #0485ff;
     background: #0485ff;
     color: white;
 }
 
-.output-select {
+.output-select, #searchBtn {
     padding: 7px 20px;
     border-radius: 0px 4px 4px 0px;
     font-family: exo, sans-serif;
@@ -75,4 +80,51 @@ body {
     color: white;
     border: none;
     font-size: 1.3em;
+}
+
+#resultsList {
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: black;
+    width: auto;
+    text-indent: 50px;
+}
+
+.newLI {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    box-sizing: border-box;
+    width: auto;
+    padding-right: 15px;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+.fadeout{
+    color: green;
+}
+
+.thumbnail {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.thumbnail, .titleText {
+    pointer-events: none;
+}
+
+.vidId {
+    display: none;
+}
+
+.searchContainer{
+    margin: 50px 0px 0px 0px;
+}
+
+.liContainer{
+    width: 600px;
 }
